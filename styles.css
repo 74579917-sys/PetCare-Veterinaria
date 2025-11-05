@@ -1,0 +1,84 @@
+:root{
+  --amarillo:#FFB300;
+  --crema:#FFF3E0;
+  --texto:#333;
+  --fondo:#fff;
+  --radio:12px;
+  --max-width:1100px;
+  --gap:1.25rem;
+  --fs-1:1.25rem;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:"Quicksand",system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  color:var(--texto);
+  background:linear-gradient(0deg,var(--crema),#fff);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:1rem;
+}
+
+.site-header{
+  background:var(--amarillo);
+  color:#fff;
+  padding:0.75rem 0;
+  box-shadow:0 2px 6px rgba(0,0,0,0.06);
+}
+.logo{margin:0; display:inline-block; font-weight:600; font-size:1.5rem}
+.main-nav{float:right}
+.main-nav a{
+  color:#fff; text-decoration:none; margin-left:1rem; font-weight:600;
+}
+
+.hero{
+  padding:2.5rem 0; text-align:center;
+  background:linear-gradient(180deg, rgba(255,179,0,0.08), transparent);
+  border-radius:var(--radio);
+  margin:1rem;
+}
+.hero h2{margin:0 0 .5rem; font-size:1.75rem}
+.btn{
+  display:inline-block; background:var(--amarillo); color:#fff; padding:.6rem .9rem;
+  border-radius:10px; text-decoration:none; margin-top:.75rem; font-weight:600;
+}
+.btn.small{padding:.4rem .6rem; font-size:.95rem}
+
+/* Grid y tarjetas */
+.grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:var(--gap);
+}
+
+.cards > .card{
+  background:#fff; border-radius:var(--radio); box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  padding:1rem; flex:1 1 calc(33.333% - var(--gap)); min-width:220px;
+}
+
+.card img{width:100%; height:160px; object-fit:cover; border-radius:10px}
+.card h4{margin:.5rem 0}
+.card p{margin:0 0 .5rem; color:#555}
+
+/* Estilos específicos */
+.servicios .card{min-height:220px}
+.adopciones .pet img{height:180px}
+.contacto{padding:1rem 0}
+
+.site-footer{padding:1rem 0; text-align:center; color:#666; font-size:.95rem; margin-top:2rem}
+
+/* Responsive */
+@media (max-width:800px){
+  .main-nav{display:none}
+  .cards > .card{flex:1 1 calc(50% - var(--gap))}
+}
+@media (max-width:480px){
+  .cards > .card{flex:1 1 100%}
+}
