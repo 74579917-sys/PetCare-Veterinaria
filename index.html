@@ -1,105 +1,271 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PetCare Veterinaria</title>
-
-  <!-- Tipografía redondeada -->
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare Veterinaria - Cuidado Profesional para tu Mascota</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">PetCare</h1>
-      <nav class="main-nav">
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#adopciones">Adopciones</a>
-        <a href="#blog">Blog</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </div>
-  </header>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">🐾 PetCare</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#adopciones">Adopciones</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
+    <!-- Hero Section -->
     <section id="inicio" class="hero">
-      <div class="container">
-        <h2>Bienvenido a PetCare</h2>
-        <p>Atención veterinaria moderna y campañas de adopción para darle una segunda oportunidad a las mascotas.</p>
-        <a class="btn" href="#adopciones">Ver adopciones</a>
-      </div>
+        <div class="hero-content">
+            <h1>Cuidado Profesional con Mucho Amor 💛</h1>
+            <p>Tu mascota merece la mejor atención médica y cariño del mundo</p>
+            <a href="#contacto" class="cta-button">Agenda tu Cita</a>
+        </div>
+        <!-- Puedes agregar una imagen de fondo aquí -->
+        <!-- <img src="images/hero-pets.jpg" alt="Mascotas felices" class="hero-bg"> -->
     </section>
 
-    <section id="servicios" class="container servicios">
-      <h3>Servicios</h3>
-      <div class="grid cards">
-        <article class="card">
-          <img src="img/servicio-vacunas.jpg" alt="Vacunas">
-          <h4>Vacunación</h4>
-          <p>Calendario de vacunas para todas las mascotas.</p>
-        </article>
-        <article class="card">
-          <img src="img/servicio-consulta.jpg" alt="Consultas">
-          <h4>Consultas generales</h4>
-          <p>Diagnóstico y planes de salud personalizados.</p>
-        </article>
-        <article class="card">
-          <img src="img/servicio-urgencias.jpg" alt="Urgencias">
-          <h4>Urgencias 24h</h4>
-          <p>Atención inmediata para casos críticos.</p>
-        </article>
-      </div>
+    <!-- Services Section -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <p class="section-subtitle">Atención integral para el bienestar de tu compañero peludo</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <span class="service-icon">🩺</span>
+                <!-- Puedes reemplazar el emoji con: <img src="images/consulta.jpg" alt="Consulta"> -->
+                <h3>Consulta Veterinaria</h3>
+                <p>Evaluaciones completas de salud con nuestros especialistas certificados. Diagnóstico preciso y tratamiento personalizado.</p>
+            </div>
+            
+            <div class="service-card">
+                <span class="service-icon">💉</span>
+                <!-- <img src="images/vacunacion.jpg" alt="Vacunación"> -->
+                <h3>Vacunación</h3>
+                <p>Programa completo de vacunas para proteger a tu mascota. Seguimiento y recordatorios incluidos.</p>
+            </div>
+            
+            <div class="service-card">
+                <span class="service-icon">✂️</span>
+                <!-- <img src="images/peluqueria.jpg" alt="Peluquería"> -->
+                <h3>Peluquería</h3>
+                <p>Servicio de grooming profesional. Baños, cortes y estilismo para que luzcan hermosos y saludables.</p>
+            </div>
+            
+            <div class="service-card">
+                <span class="service-icon">🏥</span>
+                <!-- <img src="images/cirugia.jpg" alt="Cirugía"> -->
+                <h3>Cirugía</h3>
+                <p>Quirófano equipado con tecnología de punta. Procedimientos seguros con cuidado post-operatorio especializado.</p>
+            </div>
+            
+            <div class="service-card">
+                <span class="service-icon">🦷</span>
+                <!-- <img src="images/odontologia.jpg" alt="Odontología"> -->
+                <h3>Odontología</h3>
+                <p>Limpieza dental y tratamientos especializados. Prevención y cuidado de la salud bucal.</p>
+            </div>
+            
+            <div class="service-card">
+                <span class="service-icon">🏨</span>
+                <!-- <img src="images/hospitalizacion.jpg" alt="Hospitalización"> -->
+                <h3>Hospitalización</h3>
+                <p>Internamiento 24/7 con monitoreo constante. Instalaciones cómodas y atención dedicada.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="adopciones" class="container adopciones">
-      <h3>Adopciones</h3>
-      <div class="grid cards pets">
-        <article class="card pet">
-          <img src="img/pet1.jpg" alt="Mascota 1">
-          <h4>Luna</h4>
-          <p>Hembra, 2 años. Juguetona y cariñosa.</p>
-          <a class="btn small" href="#contacto">Adoptar</a>
-        </article>
-
-        <article class="card pet">
-          <img src="img/pet2.jpg" alt="Mascota 2">
-          <h4>Max</h4>
-          <p>Macho, 4 años. Tranquilo y leal.</p>
-          <a class="btn small" href="#contacto">Adoptar</a>
-        </article>
-
-        <!-- Añade más tarjetas según necesites -->
-      </div>
+    <!-- Adoption Section -->
+    <section id="adopciones">
+        <h2>Adopciones</h2>
+        <p class="section-subtitle">¡Dale a estas adorables mascotas una segunda oportunidad! 🏡</p>
+        
+        <div class="adoption-grid">
+            <div class="pet-card">
+                <div class="pet-image">
+                    <!-- Reemplaza esto con tu imagen real -->
+                    <img src="https://images.unsplash.com/photo-1633722715463-d30f4f325e24?w=400&h=300&fit=crop" alt="Max - Golden Retriever">
+                    <!-- O usa tu propia imagen: <img src="images/max.jpg" alt="Max"> -->
+                    <span class="pet-badge">Adopción</span>
+                </div>
+                <div class="pet-info">
+                    <h3>Max</h3>
+                    <p class="pet-details">Golden Retriever • 2 años • Macho<br>Cariñoso, juguetón y entrenado</p>
+                    <button class="adopt-button">Quiero Adoptarlo</button>
+                </div>
+            </div>
+            
+            <div class="pet-card">
+                <div class="pet-image">
+                    <!-- Reemplaza esto con tu imagen real -->
+                    <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=300&fit=crop" alt="Luna - Gata Siamesa">
+                    <!-- O usa tu propia imagen: <img src="images/luna.jpg" alt="Luna"> -->
+                    <span class="pet-badge">Adopción</span>
+                </div>
+                <div class="pet-info">
+                    <h3>Luna</h3>
+                    <p class="pet-details">Gata Siamesa • 1 año • Hembra<br>Tranquila, independiente y limpia</p>
+                    <button class="adopt-button">Quiero Adoptarla</button>
+                </div>
+            </div>
+            
+            <div class="pet-card">
+                <div class="pet-image">
+                    <!-- Reemplaza esto con tu imagen real -->
+                    <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop" alt="Rocky - Mestizo">
+                    <!-- O usa tu propia imagen: <img src="images/rocky.jpg" alt="Rocky"> -->
+                    <span class="pet-badge">Adopción</span>
+                </div>
+                <div class="pet-info">
+                    <h3>Rocky</h3>
+                    <p class="pet-details">Mestizo • 3 años • Macho<br>Protector, leal y muy activo</p>
+                    <button class="adopt-button">Quiero Adoptarlo</button>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="blog" class="container blog">
-      <h3>Blog</h3>
-      <div class="grid cards">
-        <article class="card">
-          <h4>Cómo cuidar a tu cachorro</h4>
-          <p>Consejos básicos para los primeros meses.</p>
-        </article>
-        <article class="card">
-          <h4>Alimentación saludable</h4>
-          <p>Guía rápida de nutrición para mascotas.</p>
-        </article>
-      </div>
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <p class="section-subtitle">Consejos y noticias para cuidar mejor a tu mascota</p>
+        
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-image">
+                    <!-- Reemplaza con tu imagen -->
+                    <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=250&fit=crop" alt="Alimentos para perros">
+                    <!-- O usa: <img src="images/blog1.jpg" alt="Alimentos"> -->
+                </div>
+                <div class="blog-content">
+                    <p class="blog-date">3 de Noviembre, 2025</p>
+                    <h3>10 Alimentos Prohibidos para Perros</h3>
+                    <p>Descubre qué alimentos pueden ser peligrosos para la salud de tu perro y cómo mantenerlo seguro...</p>
+                    <a href="#" class="read-more">Leer más →</a>
+                </div>
+            </div>
+            
+            <div class="blog-card">
+                <div class="blog-image">
+                    <!-- Reemplaza con tu imagen -->
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=250&fit=crop" alt="Gatito cachorro">
+                    <!-- O usa: <img src="images/blog2.jpg" alt="Gato cachorro"> -->
+                </div>
+                <div class="blog-content">
+                    <p class="blog-date">1 de Noviembre, 2025</p>
+                    <h3>Cuidados Básicos para Gatos Cachorros</h3>
+                    <p>Guía completa para los primeros meses de vida de tu gatito. Todo lo que necesitas saber...</p>
+                    <a href="#" class="read-more">Leer más →</a>
+                </div>
+            </div>
+            
+            <div class="blog-card">
+                <div class="blog-image">
+                    <!-- Reemplaza con tu imagen -->
+                    <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=250&fit=crop" alt="Perro haciendo ejercicio">
+                    <!-- O usa: <img src="images/blog3.jpg" alt="Ejercicios"> -->
+                </div>
+                <div class="blog-content">
+                    <p class="blog-date">28 de Octubre, 2025</p>
+                    <h3>Ejercicios Diarios para tu Mascota</h3>
+                    <p>Mantén a tu compañero en forma con esta rutina de ejercicios adaptada a cada tipo de mascota...</p>
+                    <a href="#" class="read-more">Leer más →</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contacto" class="container contacto">
-      <h3>Contacto</h3>
-      <p>Tel: 555-123-456 • Email: contacto@petcare.example</p>
+    <!-- Contact Section -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p class="section-subtitle">¡Estamos aquí para ayudarte!</p>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div>
+                        <strong>Dirección</strong><br>
+                        Av. Los Pinos 456, San Isidro<br>
+                        Lima, Perú
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <div>
+                        <strong>Teléfono</strong><br>
+                        +51 999 888 777<br>
+                        Atención 24/7
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <div>
+                        <strong>Email</strong><br>
+                        info@petcare.pe<br>
+                        citas@petcare.pe
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">⏰</span>
+                    <div>
+                        <strong>Horario</strong><br>
+                        Lunes a Viernes: 8am - 8pm<br>
+                        Sábados: 9am - 6pm
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>Nombre Completo</label>
+                    <input type="text" placeholder="Tu nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="tu@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="+51 999 999 999">
+                </div>
+                
+                <div class="form-group">
+                    <label>Mensaje</label>
+                    <textarea placeholder="Cuéntanos cómo podemos ayudarte..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Enviar Mensaje</button>
+            </form>
+        </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© PetCare Veterinaria — Colores cálidos y cariño para tus mascotas</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Instagram">📸</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="LinkedIn">💼</a>
+            </div>
+            <p>© 2025 PetCare Veterinaria. Todos los derechos reservados.</p>
+            <p>Con amor para todas las mascotas del mundo 🐾💛</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-<p> Kike es gay </p>
 </html>
