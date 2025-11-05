@@ -1,3 +1,7 @@
+Yo si participe profe 
+Miguel ....
+
+
 # PetCare Veterinaria
 
 Descripción
@@ -74,4 +78,5 @@ Checklist para entrega
 - [ ] Al menos 1 PR aprobado y mergeado
 
 Contacto
+
 - Si necesitan ayuda con Git/GitHub me pueden preguntar y les doy comandos concretos.
